@@ -51,7 +51,6 @@ def depth_search(graph, visited, n, result):
 	if len(neighbors) == 1 and visited[neighbors[0]]:  #Condição de parada é nó folha.
 		return
 	else:
-
 		for neighbor in neighbors:
 			if not visited[neighbor]:
 				result.append(1)
