@@ -9,7 +9,7 @@ func area(raio float64) float64 {
 	return math.Pow(raio, 2) * 3.14159
 }
 
-func main() {
+func beecrowd_1002() {
 	var raio float64
 	_, err := fmt.Scanf("%f", &raio)
 
