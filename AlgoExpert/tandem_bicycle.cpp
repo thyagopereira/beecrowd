@@ -10,26 +10,18 @@ int tandemBicycle(
     // Precisa juntar os maiores de um + os menores de outro
     sort(redShirtSpeeds.begin(), redShirtSpeeds.end()); // sort in increasing order
     sort(blueShirtSpeeds.begin(), blueShirtSpeeds.end(), greater<int>()); // Sort in decreasing order
-  
-    int sum = 0; 
-    for(int i = 0; i < redShirtSpeeds.size(); i++){
-      sum += max(redShirtSpeeds[i], blueShirtSpeeds[i]);
-    }
-
-    return sum; 
   }else {
     // Precisa juntar os menores com os menores
     sort(redShirtSpeeds.begin(), redShirtSpeeds.end());
     sort(blueShirtSpeeds.begin(), blueShirtSpeeds.end());
-
-
-    int sum = 0;
-    for(int i = 0; i < redShirtSpeeds.size(); i++){
-      sum += max(redShirtSpeeds[i], blueShirtSpeeds[i]);
-    }
-
-    return sum;
   } 
+
+  int sum = 0; 
+  for(int i = 0; i < redShirtSpeeds.size(); i++){
+    sum += max(redShirtSpeeds[i], blueShirtSpeeds[i]);
+  }
+
+  return sum ;
 }
 
 int main(){
