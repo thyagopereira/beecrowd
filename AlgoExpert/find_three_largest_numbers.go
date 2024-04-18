@@ -6,6 +6,7 @@ import (
 )
 
 func FindThreeLargestNumbers(array []int) []int {
+	// Se tivesse uma implementação bem feita de math.MinInt disso seria bem menos espaçoso na memoria.
 	small, mid, large := int(math.Inf(-1)), int(math.Inf(-1)), int(math.Inf(-1))
 
 	for i := 0; i < len(array); i++ {
