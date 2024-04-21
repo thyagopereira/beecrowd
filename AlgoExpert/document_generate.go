@@ -22,7 +22,6 @@ func GenerateDocument(characters string, document string) bool {
 	}
 
 	return true
-
 }
 
 func main() {
