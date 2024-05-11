@@ -12,7 +12,7 @@ func IsMonotonic(array []int) bool {
 	decreasing, increasing := false, false
 
 	for n < len(array) {
-		if array[n] < parray[p] {
+		if array[n] < array[p] {
 			decreasing = true
 		} else if array[n] > array[p] {
 			increasing = true
