@@ -12,8 +12,6 @@ func SmallestDifference(array1, array2 []int) []int {
 	sort.Ints(array1)
 	sort.Ints(array2)
 
-	fmt.Println(array1, array2)
-
 	idxOne, idxTwo := 0, 0
 	smallestPair := []int{array1[idxOne], array2[idxTwo]}
 	currentDiff := int(math.Inf(1))
